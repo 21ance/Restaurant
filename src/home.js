@@ -6,7 +6,7 @@ function loadMainText() {
 
   btnMenu.classList.add("button-menu");
 
-  h1.textContent = "Pizzarino";
+  h1.textContent = "Pizza";
   h1Subtext.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum autem rem beatae nemo dignissimos consequatur explicabo dolor, amet iusto voluptatum ratione vero, repudiandae tenetur est incidunt animi harum non?";
   btnMenu.textContent = "Check our menu";

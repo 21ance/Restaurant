@@ -1,5 +1,6 @@
 import { pageHeader } from "./common";
 import { loadHomePage } from "./home";
+import { loadMenuPage } from "./menu";
 
 export function initialize() {
   loadHomePage();
@@ -13,6 +14,7 @@ pageHeader.homeLink.addEventListener("click", (e) => {
 pageHeader.menuLink.addEventListener("click", (e) => {
   removeChildren();
   console.log(e);
+  loadMenuPage();
 });
 
 pageHeader.contactLink.addEventListener("click", (e) => {
