@@ -1,6 +1,4 @@
 export const pageHeader = (() => {
-  const content = document.querySelector("#content");
-
   const header = document.createElement("header");
   const homeLink = document.createElement("a");
   const menuLink = document.createElement("a");
@@ -13,5 +11,5 @@ export const pageHeader = (() => {
   header.append(homeLink, menuLink, contactLink);
   content.append(header);
 
-  return { content, homeLink, menuLink, contactLink };
+  return { homeLink, menuLink, contactLink };
 })();

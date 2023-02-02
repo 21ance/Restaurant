@@ -1,5 +1,3 @@
-import { pageHeader } from "./header";
-
 function loadMainText() {
   const main = document.createElement("main");
   const h1 = document.createElement("h1");
@@ -51,5 +49,5 @@ function loadSocials() {
 }
 
 export function loadHomePage() {
-  pageHeader.content.append(loadMainText(), loadMainImage(), loadSocials());
+  content.append(loadMainText(), loadMainImage(), loadSocials());
 }

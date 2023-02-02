@@ -1,4 +1,4 @@
-import { pageHeader } from "./header";
+import { pageHeader } from "./common";
 import { loadHomePage } from "./home";
 
 export function initialize() {
@@ -21,8 +21,8 @@ pageHeader.contactLink.addEventListener("click", (e) => {
 });
 
 function removeChildren() {
-  let children = pageHeader.content.childElementCount;
+  let children = content.childElementCount;
   for (let i = 0; i < children - 1; i++) {
-    pageHeader.content.removeChild(pageHeader.content.lastChild);
+    content.removeChild(content.lastChild);
   }
 }
