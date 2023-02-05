@@ -289,16 +289,6 @@ form textarea {
         width: 45vw;
     }
 
-    .form-entry {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .text-block {
-        grid-column: 1 / -1;
-    }
-
     .contact-us {
         font-size: 2.5rem;
     }
