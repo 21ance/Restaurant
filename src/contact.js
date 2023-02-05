@@ -45,5 +45,4 @@ function loadContactBox() {
 
 export function loadContactPage() {
   content.append(loadContactBox());
-  console.log("contact");
 }

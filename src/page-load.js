@@ -22,7 +22,7 @@ pageHeader.contactLink.addEventListener("click", (e) => {
   loadContactPage();
 });
 
-function emptyPage() {
+export function emptyPage() {
   let children = content.childElementCount;
   for (let i = 0; i < children - 1; i++) {
     content.removeChild(content.lastChild);

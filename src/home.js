@@ -1,3 +1,6 @@
+import { loadMenuPage } from "./menu";
+import { emptyPage } from "./page-load";
+
 function loadMainText() {
   const main = document.createElement("main");
   const h1 = document.createElement("h1");
@@ -5,6 +8,11 @@ function loadMainText() {
   const btnMenu = document.createElement("button");
 
   btnMenu.classList.add("button-menu");
+
+  btnMenu.addEventListener("click", () => {
+    emptyPage();
+    loadMenuPage();
+  });
 
   h1.textContent = "Pizza";
   h1Subtext.textContent =
