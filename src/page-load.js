@@ -1,28 +1,28 @@
 import { pageHeader } from "./common";
 import { loadHomePage } from "./home";
 import { loadMenuPage } from "./menu";
+import { loadContactPage } from "./contact";
 
 export function initialize() {
   loadHomePage();
 }
 
 pageHeader.homeLink.addEventListener("click", (e) => {
-  removeChildren();
+  emptyPage();
   loadHomePage();
 });
 
 pageHeader.menuLink.addEventListener("click", (e) => {
-  removeChildren();
-  console.log(e);
+  emptyPage();
   loadMenuPage();
 });
 
 pageHeader.contactLink.addEventListener("click", (e) => {
-  removeChildren();
-  console.log(e);
+  emptyPage();
+  loadContactPage();
 });
 
-function removeChildren() {
+function emptyPage() {
   let children = content.childElementCount;
   for (let i = 0; i < children - 1; i++) {
     content.removeChild(content.lastChild);
